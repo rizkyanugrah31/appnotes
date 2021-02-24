@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/txtJudul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="15dp"
+                android:text="Judul"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ctxtJudul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Judul : "
+                android:layout_marginTop="30dp"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtDeskripsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_below="@+id/txtJudul"
+                android:paddingRight="15dp"
+                android:text="Deskripsi"
+                android:textColor="@color/purple_500"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ctxtDeskripsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ctxtJudul"
+                android:layout_marginTop="35dp"
+                android:text="Deskripsi : "
+                android:textColor="@color/purple_500"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imgdelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:src="@android:drawable/ic_menu_delete" />
+
+            <ImageView
+                android:id="@+id/imgedit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgdelete"
+                android:layout_alignParentEnd="true"
+                android:src="@android:drawable/ic_menu_edit" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
